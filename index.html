@@ -82,21 +82,7 @@ section{
 
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script>
-		function makeSticky(scrollPos) {
-			var $Window = jQuery( window ),
-				$Header = jQuery( ".site-header" );
-				
-				$Window.scroll(function(event) {
-					$scrollPosition = $Window.scrollTop();
-					if ($scrollPosition >= scrollPos) {
-						$Header.addClass('sticky-nav');
-					}else{
-						$Header.removeClass('sticky-nav');
-					}
-				});			
-		}
-		
+<script>		
 		function fbSlideLikeBox(scrollPos , positionVertical , positionHorizontal){
 			var	$fbSlideLikeBoxWrapper = jQuery('.facebook-plate'),
 			    $Width = $fbSlideLikeBoxWrapper.css('width'),
